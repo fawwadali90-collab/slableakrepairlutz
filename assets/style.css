@@ -176,3 +176,15 @@ footer{background:var(--slate-dark);color:#b9b2a4;padding:44px 0 22px;font-famil
 .opt h3{font-size:16.5px;margin-bottom:8px;color:var(--slate);font-family:Georgia,serif}
 .opt p{font-size:13.5px;color:var(--muted);line-height:1.65}
 .opt .tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--copper-dark);margin-bottom:8px}
+
+/* Attractive area cards (?v=4) */
+.area-zips{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+a.area-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 18px;text-decoration:none;display:block;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+a.area-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--copper),#e8b06a)}
+a.area-card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(43,52,64,.14);border-color:var(--copper)}
+.area-pin{width:42px;height:42px;border-radius:50%;background:#f8edde;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+a.area-card b{color:var(--slate);font-size:16px;display:block;font-family:Georgia,serif}
+a.area-card .zcount{font-size:12px;color:var(--copper-dark);font-weight:700;margin:2px 0 8px;display:block}
+.zchips{display:flex;flex-wrap:wrap;gap:6px}
+.zchips span{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:3px 9px;font-size:12px;font-weight:700;color:var(--slate);font-family:Arial,Helvetica,sans-serif}
+a.area-card .go{display:inline-block;margin-top:12px;font-size:13px;font-weight:700;color:var(--copper-dark);font-family:Arial,Helvetica,sans-serif}
